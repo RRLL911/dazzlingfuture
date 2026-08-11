@@ -1,0 +1,2100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://qhzcad.com/expage/2025hurun -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025胡润·耀眼未来教育盛典</title>
+
+    <script src="./2025胡润·耀眼未来教育盛典_files/tailwindcss.17"></script>
+    <script src="./2025胡润·耀眼未来教育盛典_files/chart.umd.min.js.下载"></script>
+    <link href="./2025胡润·耀眼未来教育盛典_files/font-awesome.min.css" rel="stylesheet">
+    <link src="/resources/css/2025hurun/2025hurun.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0052D9', // 腾讯云风格主蓝色
+                        secondary: '#1677FF', // 辅助蓝
+                        accent: '#36CFC9', // 科技感青色点缀
+                        dark: '#1D2129',
+                        light: '#F2F3F5'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                },
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url('/resources/css/2025hurun/fonts/Inter-300.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('/resources/css/2025hurun/fonts/Inter-400.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url('/resources/css/2025hurun/fonts/Inter-500.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url('/resources/css/2025hurun/fonts/Inter-600.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url('/resources/css/2025hurun/fonts/Inter-700.woff2') format('woff2');
+        }
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-balance {
+                text-wrap: balance;
+            }
+            .bg-grid {
+                background-image: radial-gradient(rgba(0, 82, 217, 0.05) 1px, transparent 1px);
+                background-size: 20px 20px;
+            }
+            .card-border {
+                border: 1px solid rgba(0, 82, 217, 0.1);
+            }
+        }
+    </style>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1D2129;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #0052D9 0%, #1677FF 100%);
+            position: relative;
+            overflow: hidden;
+            background-image: url(/resources/img/2025hurun/img.png);
+        }
+
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /*background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");*/
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #36CFC9;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 82, 217, 0.1);
+            border-color: rgba(22, 119, 255, 0.2);
+        }
+
+        .timeline-dot::before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgb(129, 2, 234);
+            left: -6px;
+            top: 6px;
+        }
+
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: rgb(129, 2, 234);
+            left: 0;
+            top: 24px;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stat-counter {
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .chart-container {
+            position: relative;
+            height: 300px;
+        }
+
+        .honor-table th, .honor-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid rgba(0, 82, 217, 0.1);
+        }
+
+        .honor-table th {
+            background-color: rgba(0, 82, 217, 0.05);
+            font-weight: 600;
+        }
+
+        .honor-table tr:hover {
+            background-color: rgba(0, 82, 217, 0.02);
+        }
+
+        .partner-logo {
+            transition: all 0.3s ease;
+            /*filter: grayscale(50%);*/
+        }
+
+        .partner-logo:hover {
+            transform: scale(1.05);
+            /*filter: grayscale(0);*/
+        }
+        /*    特效*/
+        .tu2yagnshi {
+            border-radius: 0.75rem;
+            transition: transform 0.5s;
+        }
+        .tu2yagnshi:hover {
+            transform: scale(1.03);
+        }
+
+        .rounded-xl {
+            border-radius: 0.75rem;
+            transition: transform 0.5s;
+        }
+        .rounded-xl:hover {
+            transform: scale(1.03);
+        }
+
+        /* 荣誉设置 - 长条式样式 */
+        .honor-item {
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        .honor-title {
+            transition: all 0.4s ease;
+        }
+        /* 展开状态（active）：标题居中 */
+        .honor-item.active .honor-title {
+            justify-content: center;
+            background-color: rgba(22, 119, 255, 0.1);
+        }
+        /* 展开状态：标题文字居中 */
+        .honor-item.active .honor-title h3 {
+            text-align: center;
+        }
+        /* 未展开时 hover 样式保持不变 */
+        .honor-item:not(.active):hover .honor-title {
+            background-color: rgba(22, 119, 255, 0.05);
+        }
+        .honor-detail {
+            animation: fadeInUp 0.4s ease forwards;
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* 箭头旋转动画 */
+        .honor-item.active .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .honor-title {
+                padding: 1rem;
+            }
+            .honor-title h3 {
+                font-size: 0.95rem;
+            }
+            .honor-detail {
+                padding: 1rem;
+            }
+            .honor-detail p {
+                font-size: 0.875rem;
+            }
+        }
+
+        /*logo*/
+        /* 针对所有合作伙伴 Logo 图片 */
+        .partner-logo img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+
+        }
+
+        /* 禁用 hover 时的样式变化 */
+        .partner-logo img:hover {
+            filter: none !important;
+            opacity: 1 !important;
+            transform: none !important; /* 若有放大效果也移除 */
+        }
+
+
+        /* 在现有样式基础上添加 */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            /* 调整导航项间距 */
+            .container {
+                max-width: 100%;
+            }
+            .space-x-8 > :not([hidden]) ~ :not([hidden]) {
+                --tw-space-x-reverse: 0;
+                margin-right: calc(2rem * var(--tw-space-x-reverse));
+                margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+            }
+            /* 缩小导航文字 */
+            .nav-link.text-sm {
+                font-size: 0.7rem; /* 适当缩小文字 */
+            }
+
+            /* 调整logo文字 */
+            .flex-shrink-0.flex.items-center span {
+                font-size: 0.9rem; /* 缩小logo旁文字 */
+            }
+        }
+        @media (max-width: 768px) {
+            .timeline-line::before {
+                left: -29px;
+            }
+
+            .timeline-dot::before {
+                left: -35px;
+            }
+
+            .honor-table {
+                font-size: 0.875rem;
+            }
+
+            .honor-table th, .honor-table td {
+                padding: 0.5rem 0.75rem;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .image-container {
+                height: auto; /* 固定高度，确保图片完整展示 */
+            }
+            .image-container img {
+                object-fit: cover; /* 保持比例裁剪，优先展示核心内容 */
+            }
+        }
+        @media (min-width: 768px) {
+            body.container {
+                max-width: 98%;
+            }
+
+        }
+        @media (max-width: 587px) {
+
+            .banner_top {
+                margin-top: 10%;
+            }
+        }
+
+
+        .border1-gray-200 {
+            --tw-border-opacity: 1;
+            background-color: #410a80;
+            border-color: rgb(125, 94, 213);
+        }
+        .border2-gray-200 {
+            --tw-border-opacity: 1;
+            background-color: #4a0087;
+            border-color: rgb(125, 94, 213);
+        }
+        .text1-gray-800 {
+            --tw-text-opacity: 1;
+            color: rgb(255, 255, 255);
+        }
+        .text1-gray-600 {
+            --tw-text-opacity: 1;
+            color: rgb(255, 255, 255);
+        }
+        .bg-secondary1 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(142, 44, 79);
+        }
+        .text1-dark {
+            --tw-text-opacity: 1;
+            color: rgb(255, 255, 255);
+        }
+
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.right-4{right:1rem}.top-0{top:0px}.top-4{top:1rem}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.ml-2{margin-left:0.5rem}.mr-2{margin-right:0.5rem}.mr-3{margin-right:0.75rem}.mt-3{margin-top:0.75rem}.mb-12{margin-bottom:3rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-1{height:0.25rem}.h-10{height:2.5rem}.h-16{height:4rem}.h-3{height:0.75rem}.h-64{height:16rem}.h-auto{height:auto}.h-full{height:100%}.max-h-full{max-height:100%}.w-10{width:2.5rem}.w-16{width:4rem}.w-3{width:0.75rem}.w-fit{width:-moz-fit-content;width:fit-content}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}.max-w-full{max-width:100%}.flex-shrink-0{flex-shrink:0}.flex-grow{flex-grow:1}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3{gap:0.75rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-12 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(3rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(3rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.text-balance{text-wrap:balance}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-t{border-top-width:1px}.border-\[rgb\(125\2c 94\2c 213\)\]{--tw-border-opacity:1;border-color:rgb(125 94 213 / var(--tw-border-opacity, 1))}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246 / var(--tw-border-opacity, 1))}.bg-primary\/10{background-color:rgb(0 82 217 / 0.1)}.bg-primary\/5{background-color:rgb(0 82 217 / 0.05)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-yellow-300{--tw-bg-opacity:1;background-color:rgb(253 224 71 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-yellow-500{--tw-bg-opacity:1;background-color:rgb(234 179 8 / var(--tw-bg-opacity, 1))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.to-white{--tw-gradient-to:#fff var(--tw-gradient-to-position)}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.pl-6{padding-left:1.5rem}.pt-0{padding-top:0px}.text-center{text-align:center}.text-\[clamp\(1\.5rem\2c 3vw\2c 2\.5rem\)\]{font-size:clamp(1.5rem,3vw,2.5rem)}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.text-\[rgb\(125\2c 94\2c 213\)\]{--tw-text-opacity:1;color:rgb(125 94 213 / var(--tw-text-opacity, 1))}.text-dark{--tw-text-opacity:1;color:rgb(29 33 41 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/70{color:rgb(255 255 255 / 0.7)}.text-white\/80{color:rgb(255 255 255 / 0.8)}.text-white\/90{color:rgb(255 255 255 / 0.9)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.text-balance {
+                text-wrap: balance;
+            }.card-border {
+                border: 1px solid rgba(0, 82, 217, 0.1);
+            }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url('/resources/css/2025hurun/fonts/Inter-300.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('/resources/css/2025hurun/fonts/Inter-400.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url('/resources/css/2025hurun/fonts/Inter-500.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url('/resources/css/2025hurun/fonts/Inter-600.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url('/resources/css/2025hurun/fonts/Inter-700.woff2') format('woff2');
+        }
+        .hover\:text-primary:hover{--tw-text-opacity:1;color:rgb(0 82 217 / var(--tw-text-opacity, 1))}
+        .hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}
+        .hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}
+        @media (min-width: 640px){.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}
+        @media (min-width: 768px){.md\:right-6{right:1.5rem}.md\:col-span-2{grid-column:span 2 / span 2}.md\:col-span-3{grid-column:span 3 / span 3}.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}.md\:p-6{padding:1.5rem}.md\:p-8{padding:2rem}.md\:px-6{padding-left:1.5rem;padding-right:1.5rem}.md\:px-8{padding-left:2rem;padding-right:2rem}.md\:pl-0{padding-left:0px}.md\:text-base{font-size:1rem;line-height:1.5rem}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}
+        @media (min-width: 1024px){.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:grid-cols-6{grid-template-columns:repeat(6, minmax(0, 1fr))}}
+    </style></head>
+
+<body class="bg-white">
+<!-- 导航栏 -->
+<nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300   backdrop-blur-sm shadow-sm" style="background-color: rgb(101 8 178)">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-r   flex items-center justify-center mr-3">
+
+                        <img src="./2025胡润·耀眼未来教育盛典_files/logo.png">
+                    </div>
+                    <span class="text-lg font-semibold text1-dark">胡润·耀眼未来教育盛典</span>
+                </div>
+            </div>
+
+            <!-- 桌面端导航 -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="https://qhzcad.com/expage/2025hurun#overview" class="nav-link text1-dark hover:text-primary transition-colors duration-300 relative text-sm font-medium">盛典概览</a>
+                <a href="https://qhzcad.com/expage/2025hurun#industry" class="nav-link text1-dark hover:text-primary transition-colors duration-300 relative text-sm font-medium">行业现状</a>
+                <a href="https://qhzcad.com/expage/2025hurun#global" class="nav-link text1-dark hover:text-primary transition-colors duration-300 relative text-sm font-medium">全球生态</a>
+                <a href="https://qhzcad.com/expage/2025hurun#tech" class="nav-link text1-dark hover:text-primary transition-colors duration-300 relative text-sm font-medium">教育科技</a>
+                <a href="https://qhzcad.com/expage/2025hurun#process" class="nav-link text1-dark hover:text-primary transition-colors duration-300 relative text-sm font-medium">流程安排</a>
+                <a href="https://qhzcad.com/expage/2025hurun#honor" class="nav-link text1-dark hover:text-primary transition-colors duration-300 relative text-sm font-medium">荣誉设置</a>
+                <a href="https://qhzcad.com/expage/2025hurun#partners" class="nav-link text1-dark hover:text-primary transition-colors duration-300 relative text-sm font-medium">合作伙伴</a>
+            </div>
+
+            <!-- 移动端菜单按钮 -->
+            <button id="mobileMenuBtn" class="md:hidden text-dark">
+                <i class="fa fa-bars text-xl"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- 移动端导航菜单 -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100">
+        <div class="container mx-auto px-4 py-3 space-y-1">
+            <a href="https://qhzcad.com/expage/2025hurun#overview" class="block py-3 text1-dark hover:text-primary transition-colors">盛典概览</a>
+            <a href="https://qhzcad.com/expage/2025hurun#industry" class="block py-3 text1-dark hover:text-primary transition-colors">行业现状</a>
+            <a href="https://qhzcad.com/expage/2025hurun#global" class="block py-3 text1-dark hover:text-primary transition-colors">全球生态</a>
+            <a href="https://qhzcad.com/expage/2025hurun#tech" class="block py-3 text1-dark hover:text-primary transition-colors">教育科技</a>
+            <a href="https://qhzcad.com/expage/2025hurun#process" class="block py-3 text1-dark hover:text-primary transition-colors">流程安排</a>
+            <a href="https://qhzcad.com/expage/2025hurun#honor" class="block py-3 text1-dark hover:text-primary transition-colors">荣誉设置</a>
+            <a href="https://qhzcad.com/expage/2025hurun#partners" class="block py-3 text1-dark hover:text-primary transition-colors">合作伙伴</a>
+        </div>
+    </div>
+</nav>
+
+<!-- 英雄区 -->
+
+<section class="relative w-full h-auto banner_top   overflow-hidden">
+    <img src="./2025胡润·耀眼未来教育盛典_files/banner.png" alt="2025胡润·耀眼未来教育盛典" class="w-full h-full object-cover">
+</section>
+<!-- 盛典概览  background: linear-gradient(22deg, #3a0ca3, #8ce4ff1a);-->
+<section id="overview" class="py-16  bg-white" style="background-color: #4a0087">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16 reveal active">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4" style="color: white">盛典概览</h2>
+            <div class="w-16 h-1 bg-secondary1 mx-auto mb-6"></div>
+            <p class="text-gray-600 mx-auto text-balance" style="color: white">
+                作为全球教育生态的重要观察者与连接者，胡润百富旗下国际教育平台胡润百学深耕教育领域多年，其发布的教育榜单已成为社会各界洞察行业趋势的权威窗口。
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-stretch">
+            <!-- 文字区域  -->
+            <div class="border border1-gray-200 rounded-lg p-6 shadow-sm flex flex-col md:col-span-3">
+                <h3 class="text-xl font-semibold text1-gray-800 mb-4">2025胡润·耀眼未来教育盛典</h3>
+                <p class="text1-gray-600 flex-grow" style="line-height: 2rem">
+                    当前，中国教育正处于蓬勃发展与深刻变革的关键时期：国家持续深化教育领域综合改革，从教育强国建设纲要的落地到职业教育体系的重构，从教育数字化新赛道的开辟到高水平对外开放的推进，政策红利正加速转化为行业发展的内生动力。与此同时，全球教育生态正经历深刻变革。数据显示，2026 年全球在线教育市场规模将突破 3700 亿美元，人工智能、虚拟现实等技术正重塑教学形态，个性化学习、终身学习成为主流需求，而国际教育双向交流的频繁，更推动着教育理念与资源的跨文化融合，也为教育行业带来了更广阔的视野与更高的要求。在这样的大背景下，教育科技的迅猛发展正在重塑教育形态，在线教育、智能教学工具的广泛应用，打破了时空限制，让优质教育资源能够触达更多人群。为了表彰在教育领域的卓越贡献者，搭建教育界交流合作的桥梁，推动教育行业迈向新的高度，助力培养更多适应时代发展需求的优秀人才，特举办 2025 胡润·耀眼未来教育盛典。
+                </p>
+            </div>
+            <!-- 图片区域： -->
+            <div class="rounded-lg overflow-hidden shadow-md image-container md:col-span-2">
+                <img src="./2025胡润·耀眼未来教育盛典_files/tu3.png" alt="2025胡润·耀眼未来教育盛典" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 行业现状 -->
+<section id="industry" class="py-16   bg-primary/5" style="background:radial-gradient(circle at center, #4a0087, #252b68 120%);">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16 reveal active">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4  " style="color: white">中国教育发展现状</h2>
+            <div class="w-16 h-1 bg-secondary1 mx-auto mb-6  "></div>
+            <p class="text-gray-600  mx-auto text-balance  " style="color: white">
+                当前，中国教育正处于蓬勃发展与深刻变革的关键时期，政策正加速转化为行业发展的内生动力。
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="feature-card border2-gray-200 p-8 rounded-xl shadow-sm reveal border active">
+                <h3 class="text-xl font-semibold text1-dark mb-3">深化综合改革</h3>
+                <p class="text1-gray-600">
+                    以权威视角解析全球教育发展趋势，连接教育者与跨界创新力量，构建国际化交流平台。
+                </p>
+            </div>
+
+            <div class="feature-card border2-gray-200 p-8 rounded-xl shadow-sm reveal border active" style="transition-delay: 0.2s">
+                <h3 class="text-xl font-semibold text1-dark mb-3">行业创新成果展示</h3>
+                <p class="text1-gray-600">
+                    聚焦教育科技前沿成果，展示人工智能、大数据等技术在教育领域的创新应用与实践案例。
+                </p>
+            </div>
+
+            <div class="feature-card border2-gray-200 p-8 rounded-xl shadow-sm reveal border active" style="transition-delay: 0.4s">
+                <h3 class="text-xl font-semibold text1-dark mb-3">跨界合作网络构建</h3>
+                <p class="text1-gray-600">
+                    搭建教育、科技、企业跨界合作桥梁，促进资源共享与协同创新，推动教育生态系统升级。
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- 全球教育生态 -->
+<section id="global" class="py-16   bg-white" style="background-color: #4a0087">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16 reveal active">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4" style="color: white">全球教育生态变革</h2>
+            <div class="w-16 h-1 bg-secondary1 mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto text-balance" style="color: white">
+                全球教育生态正经历深刻变革，新技术、新需求、新需求共同塑造着教育的未来发展方向。
+            </p>
+        </div>
+
+        <!-- 内容区域：左侧图表+右侧要点 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <!-- 左侧图表区域 -->
+            <div class="p-6 rounded-lg shadow-sm border border-[rgb(125,94,213)]" style="background-color: #410a80;">
+                <h3 class="text-lg font-semibold text-white mb-4">全球在线教育市场增长</h3>
+                <div class="w-full h-64 relative">
+                    <!-- SVG图表（调整颜色适配深色背景） -->
+                    <svg class="w-full h-full" viewBox="0 0 500 300" preserveAspectRatio="none">
+                        <line x1="60" y1="240" x2="460" y2="240" stroke="#7d5edd80" stroke-width="1.5"></line>
+                        <line x1="60" y1="240" x2="60" y2="40" stroke="#7d5edd80" stroke-width="1.5"></line>
+                        <g fill="#ffffffcc" font-size="10">
+                            <text x="55" y="243" text-anchor="end">150</text>
+                            <text x="55" y="193" text-anchor="end">200</text>
+                            <text x="55" y="143" text-anchor="end">250</text>
+                            <text x="55" y="93" text-anchor="end">300</text>
+                            <text x="55" y="43" text-anchor="end">350</text>
+                            <text x="55" y="23" text-anchor="end">400</text>
+                        </g>
+                        <g stroke="#7d5edd40" stroke-width="1">
+                            <line x1="60" y1="190" x2="460" y2="190"></line>
+                            <line x1="60" y1="140" x2="460" y2="140"></line>
+                            <line x1="60" y1="90" x2="460" y2="90"></line>
+                            <line x1="60" y1="40" x2="460" y2="40"></line>
+                        </g>
+                        <g fill="#ffffffcc" font-size="10" text-anchor="middle">
+                            <text x="60" y="255">2020</text>
+                            <text x="130" y="255">2021</text>
+                            <text x="200" y="255">2022</text>
+                            <text x="270" y="255">2023</text>
+                            <text x="340" y="255">2024</text>
+                            <text x="410" y="255">2025</text>
+                        </g>
+                        <polygon points="60,200 130,180 200,160 270,130 340,100 410,70 410,240 60,240" fill="#7d5edd30" opacity="0.8"></polygon>
+                        <polyline points="60,200 130,180 200,160 270,130 340,100 410,70" fill="none" stroke="#9d81f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></polyline>
+                        <g fill="#9d81f7">
+                            <circle cx="60" cy="200" r="3.5"></circle>
+                            <circle cx="130" cy="180" r="3.5"></circle>
+                            <circle cx="200" cy="160" r="3.5"></circle>
+                            <circle cx="270" cy="130" r="3.5"></circle>
+                            <circle cx="340" cy="100" r="3.5"></circle>
+                            <circle cx="410" cy="70" r="3.5"></circle>
+                        </g>
+                    </svg>
+                    <div class="absolute top-4 right-4 flex items-center text-sm">
+                        <div class="w-3 h-3 bg-yellow-300 mr-2"></div>
+                        <span class="text-white/90">市场规模（十亿美元）</span>
+                    </div>
+                </div>
+                <p class="text-xs text-white/70 mt-3">数据显示，2025年全球在线教育市场规模预计突破3500亿美元</p>
+            </div>
+
+            <!-- 右侧文字区域 -->
+            <div class="p-6 rounded-lg shadow-sm border border-[rgb(125,94,213)]" style="background-color: #410a80;">
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-base font-semibold text-white mb-2">人工智能重塑教学体验</h3>
+                        <p class="text-white/80 text-sm">
+                            AI驱动的自适应学习系统能够根据学生学习情况动态调整内容与节奏，实现真正的个性化教育。
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-base font-semibold text-white mb-2">跨境教育资源流动加速</h3>
+                        <p class="text-white/80 text-sm">
+                            数字技术打破地理限制，优质教育资源全球共享成为可能，推动教育国际化与多元化发展。
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-base font-semibold text-white mb-2">终身学习体系逐步完善</h3>
+                        <p class="text-white/80 text-sm">
+                            从K12到职业教育，再到继续教育，一体化学习平台构建终身学习生态，满足多元化学习需求。
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-base font-semibold text-white mb-2">技术重塑教学形态</h3>
+                        <p class="text-white/80 text-sm">
+                            虚拟现实、混合现实等技术融合教学场景，创造沉浸式学习体验，突破传统教育时空限制。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- 教育科技 -->
+<section id="tech" class="py-16   bg-primary/5" style="background:radial-gradient(circle at center, #4a0087, #252b68 120%);">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16 reveal active">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4" style="color: white">教育科技的迅猛发展</h2>
+            <div class="w-16 h-1 bg-secondary1 mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto text-balance" style="color: white">
+                教育料技的迅猛发展正在重塑教育形态，打破时空限制，让优质教育资源能够触达更多人群。
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="feature-card p-8 rounded-xl shadow-sm reveal border2-gray-200 border active">
+                <h3 class="text-xl font-semibold text-white mb-3">智能辅导系统</h3>
+                <p class="text1-gray-600">
+                    基于AI的智能辅导系统能够实时解答学生疑问，提供个性化学习建议。
+                </p>
+            </div>
+
+            <div class="feature-card p-8 rounded-xl shadow-sm reveal border2-gray-200 border active" style="transition-delay: 0.2s">
+                <h3 class="text-xl font-semibold text-white mb-3">虚拟学习环境</h3>
+                <p class="text1-gray-600">
+                    VR/AR技术创建沉浸式学习场景，提升复杂知识的理解与实践能力。
+                </p>
+            </div>
+
+            <div class="feature-card p-8 rounded-xl shadow-sm reveal border2-gray-200 border active" style="transition-delay: 0.4s">
+                <h3 class="text-xl font-semibold text-white mb-3">学习数据分析</h3>
+                <p class="text1-gray-600">
+                    大数据技术分析学习行为，优化教学策略，预测学习成果与潜在问题。
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 无界智育 共生共进 -->
+<section id="global1" class="py-16  " style="background-color: #4a0087">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16 reveal active">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-4" style="color: white">无界智育 共生共进</h2>
+            <div class="w-16 h-1 bg-secondary1 mx-auto mb-6"></div>
+            <p class="max-w-2xl mx-auto text-balance" style="color: white">
+                汇聚全球教育专家、知名校长、行业领军者及跨界有识之士，共探教育未来发展之路
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="feature-card p-8 rounded-xl shadow-sm reveal border1-gray-200 border active">
+                <h3 class="text-xl font-semibold text-white mb-3">在线教育</h3>
+                <p class="text-white/80">
+                    突破传统课堂限制，通过互联网技术实现优质教育资源的广泛传播，让学习随时随地发生。
+                </p>
+            </div>
+
+            <div class="feature-card p-8 rounded-xl shadow-sm reveal border1-gray-200 border active" style=" transition-delay: 0.2s;">
+                <h3 class="text-xl font-semibold text-white mb-3">智能教学工具</h3>
+                <p class="text-white/80">
+                    借助人工智能技术，实现教学过程的智能化、个性化，提升教学效率与学习效果。
+                </p>
+            </div>
+
+            <div class="feature-card p-8 rounded-xl shadow-sm reveal border1-gray-200 border active" style="  transition-delay: 0.4s;">
+                <h3 class="text-xl font-semibold text-white mb-3">教育公平</h3>
+                <p class="text-white/80">
+                    技术赋能下的教育公平，让偏远地区和弱势群体也能享受到优质教育资源，促进社会公平。
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- 教育科技 -->
+<section id="tech1" class="py-16   bg-primary/5" style="background:radial-gradient(circle at center, #4a0087, #252b68 120%);">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center reveal active">
+            <p class="text-gray-600  mx-auto text-balance  " style="line-height: 2.6rem; color: white">
+                2025 胡润·耀眼未来教育盛典颁奖典礼拟定于 2026 年 1 月举办。本次活动围绕“无界智育 共生共进”为主题，拟邀请教育行业的顶级的专家学者、企业家及资深从业者共同参与，共同探讨教育的未来趋势和发展方向，就教育领域的热点话题进行深入交流，为与会者提供一个宝贵的学习和交流的平台，促进教育行业的合作与发展，为推动教育事业的进步贡献力量，依托多家媒体的全方位报道，立体呈现成果全貌，进而推动影响力持续提升，使其成为社会关注的焦点。
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- 流程安排 -->
+<section id="process" class="py-16   bg-white" style="background-color: #4a0087">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16 reveal active">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4" style="color: white">盛典流程安排</h2>
+            <div class="w-16 h-1 bg-secondary1 mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto text-balance" style="color: white">
+                2025年1月 · 中国上海 · 聚焦教育创新与科技融合的全球盛会
+            </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto relative pl-6 md:pl-0 timeline-line">
+            <div class="space-y-12">
+                <div class="relative timeline-dot reveal active">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10  text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">08:00 - 09:00</span>
+                            <h3 class="text-lg font-semibold text1-dark">盛典签到</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                            欢迎莅临胡润耀眼未来教育盛典签到现场
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.2s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10  text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">09:00 - 09:15</span>
+                            <h3 class="text-lg font-semibold text1-dark">开幕致辞</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.2s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10  text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">09:15 - 09:30</span>
+                            <h3 class="text-lg font-semibold text1-dark">主题演讲</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.4s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10  text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">09:30 - 09:45</span>
+                            <h3 class="text-lg font-semibold text1-dark">主题演讲</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.6s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10  text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">09:45 - 10:00</span>
+                            <h3 class="text-lg font-semibold text1-dark">主题演讲</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.8s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10 text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">10:00 - 10:40</span>
+                            <h3 class="text-lg font-semibold text1-dark">圆桌论坛</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.8s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10 text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">10:40 - 10:50</span>
+                            <h3 class="text-lg font-semibold text1-dark">人物致敬</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.8s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10 text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">10:50 - 11:05</span>
+                            <h3 class="text-lg font-semibold text1-dark">主题演讲</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.8s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10 text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">11:05 - 11:20</span>
+                            <h3 class="text-lg font-semibold text1-dark">主题演讲</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.8s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10 text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">11:20 - 11:35</span>
+                            <h3 class="text-lg font-semibold text1-dark">主题演讲</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.8s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10 text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">11:35 - 11:50</span>
+                            <h3 class="text-lg font-semibold text1-dark">主题演讲</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.8s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10 text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">14:00 - 14:15</span>
+                            <h3 class="text-lg font-semibold text1-dark">演讲致辞</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.8s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10 text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">14:15 - 14:30</span>
+                            <h3 class="text-lg font-semibold text1-dark">主题演讲</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.8s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10 text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">14:30 - 14:45</span>
+                            <h3 class="text-lg font-semibold text1-dark">主题演讲</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.8s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10 text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">14:45 - 15:00</span>
+                            <h3 class="text-lg font-semibold text1-dark">主题演讲</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.8s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10 text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">15:00 - 15:15</span>
+                            <h3 class="text-lg font-semibold text1-dark">主题演讲</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.8s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10 text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">15:15 - 15:55</span>
+                            <h3 class="text-lg font-semibold text1-dark">圆桌论坛</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.8s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10 text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">15:55 - 16:10</span>
+                            <h3 class="text-lg font-semibold text1-dark">主题演讲</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.8s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10 text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">16:10 - 16:50</span>
+                            <h3 class="text-lg font-semibold text1-dark">圆桌论坛</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.8s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10 text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">16:50 - 17:30</span>
+                            <h3 class="text-lg font-semibold text1-dark">圆桌论坛</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative timeline-dot reveal active" style="transition-delay: 0.8s">
+                    <div class="border1-gray-200 p-6 rounded-xl card-border shadow-sm border">
+                        <div class="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+                            <span class="bg-primary/10 text1-gray-600 text-xs px-3 py-1 rounded-full w-fit" style="background-color: rgb(129, 2, 234);">19:00 - 21:00</span>
+                            <h3 class="text-lg font-semibold text1-dark">2025年度荣誉致敬、晚宴</h3>
+                        </div>
+                        <p class="text1-gray-600 text-sm">
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 参选目标 -->
+<section id="tech2" class="py-16  bg-primary/5" style="background:radial-gradient(circle at center, #4a0087, #252b68 120%);">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16 reveal active">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4" style="color: white">参选目标</h2>
+            <div class="w-16 h-1 bg-secondary1 mx-auto mb-6"></div>
+
+        </div>
+        <div class="py-12 px-4 md:px-8  mx-auto" style="padding-top: 0rem">
+            <!-- 目标内容网格 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+                <!-- 目标1 -->
+                <div class="border2-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 border ">
+                    <h3 class="text-xl font-semibold text-white mb-3">树立行业标杆</h3>
+                    <p class="text-white/80">
+                        能够为教育工作者提供可借鉴的范例，明确教育发展的方向和标准，引导更多教育力量向高质量、高水平的方向迈进。
+                    </p>
+                </div>
+
+                <!-- 目标2 -->
+                <div class="border2-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 border">
+                    <h3 class="text-xl font-semibold text-white mb-3">促进全球教育交流</h3>
+                    <p class="text-white/80">
+                        吸引来自世界各地的教育参与者，搭建起一个跨地域、跨文化的交流平台，打破地域壁垒，推动全球教育领域的深度交流与合作。
+                    </p>
+                </div>
+
+                <!-- 目标3 -->
+                <div class="border2-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 border">
+                    <h3 class="text-xl font-semibold text-white mb-3">激发教育创新活力</h3>
+                    <p class="text-white/80">
+                        鼓励他们在教育模式、教学方法、技术应用等方面大胆尝试，不断突破传统教育的局限，为全球教育注入新的活力和动力，推动教育事业持续革新。
+                    </p>
+                </div>
+
+                <!-- 目标4 -->
+                <div class="border2-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 border">
+                    <h3 class="text-xl font-semibold text-white mb-3">推动教育公平与优质资源共享</h3>
+                    <p class="text-white/80">
+                        引导更多社会力量关注教育公平问题，促进优质教育资源在全球范围内的流动与共享，努力缩小不同地区、不同群体之间的教育差距，让更多人享受到公平而有质量的教育。
+                    </p>
+                </div>
+
+                <!-- 目标5（占满整行） -->
+                <div class="border2-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 md:col-span-2 border">
+                    <h3 class="text-xl font-semibold text-white mb-3">助力教育生态构建</h3>
+                    <p class="text-white/80 ">
+                        汇聚教育领域的智慧和力量，共同探讨教育发展面临的挑战与机遇，凝聚共识，形成推动教育发展的合力，逐步构建一个更加公平、高效、创新、包容的教育新生态，为教育的可持续发展奠定坚实基础。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+<!-- 荣誉设置 -->
+<!-- 荣誉设置 -->
+<section id="honor" class="py-16   bg-white" style="background-color: #4a0087">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16 reveal active">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4" style="color: white">荣誉设置</h2>
+            <div class="w-16 h-1 bg-secondary1 mx-auto mb-6"></div>
+            <p class="text-gray-600  mx-auto text-balance" style="color: white">
+                本次盛典将甄选教育领域的杰出典范，包括备受瞩目的标杆人物、卓越的学校以及杰出的教育机构
+            </p>
+        </div>
+
+
+
+        <div class="space-y-4 w-full">
+
+            <!-- 奖项1（默认展开） -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度教育行业影响力人物</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0 hidden">
+                    <p class="text-white/80 mb-4">
+                        候选人需是教育创新的先锋，推动在线教育、AI教学工具或个性化学习模式的发展；或是政策改革的推动者，在国家或地区教育政策制定中发挥关键作用；或是基础教育改革者，在教学体系中实施创新教学方法并取得显著成效；或是国际教育领航者和公益教育先锋，在推动教育进步和发展方面发挥重要作用。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 奖项2 -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度国际化教育影响力人物</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0 hidden">
+                    <p class="text-white/80 mb-4">
+                        候选人需在国际教育交流与合作中发挥关键作用，他们积极推动跨国教育资源共享，引入先进教育理念与教学方法，助力培养具有国际视野的人才，是连接国内外教育的重要桥梁，在国际化教育进程中树立了光辉榜样。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 奖项3 -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度国际化教育影响力品牌</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0 hidden">
+                    <p class="text-white/80 mb-4">
+                        参选品牌需在国际教育领域表现卓越，能够提供多元化的国际课程，拥有优秀的教师师资队伍，积极搭建国际教育交流平台，助力众多学子实现留学梦想，推动国际教育的发展与融合，在行业内具有广泛的影响力。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 奖项4 -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度实力突出国际化学校</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0 hidden">
+                    <p class="text-white/80 mb-4">
+                        参选学校需在全球教育领域表现卓越、成果显著，在课程创新、学生发展、国际交流及升学成果等方面有突出表现，具备先进的教育理念和教学体系，还在多元文化融合、社会责任担当当中展现出引领作用，是国际化教育发展的典范。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 奖项5 -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度影响力卓越国际化学校</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0 hidden">
+                    <p class="text-white/80 mb-4">
+                        参选学校需拥有国际化的课程体系，融合多元化教育，师资队伍兼具本土经验与国际视野，教学理念先进完善，注重培养学生全球胜任力，在国际教育舞台上发挥着重要的引领与示范作用。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 奖项6 -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度特色化办学国际学校</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0 hidden">
+                    <p class="text-white/80 mb-4">
+                        参选学校需是在教育领域展现出卓越创新性和鲜明办学特色的国际学校，并率先在课程创新、教学模式、人才培养及社会责任等方面有突出表现，兼具先进的办学理念、优秀的师资队伍和卓越的教育成果，为学生提供多元化的成长路径，成为国际教育界的佼佼者，引领行业发展潮流。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 奖项7 -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度卓越成就语言培训品牌</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0 hidden">
+                    <p class="text-white/80 mb-4">
+                        参选机构拥有专业的教学团队，具备丰富的教学经验和专业的资质背景，能够提供高质量的语言培训课程，课程体系完善，教学方法科学有效，学员满意度高，服务流程完整，能够为学员提供个性化的学习方案和贴心的学习支持服务。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- 奖项8 -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度卓越服务国际课程辅导品牌</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0 hidden">
+                    <p class="text-white/80 mb-4">
+                        拥有一支高素质、经验丰富的专业师资队伍，课程设置科学合理，能够覆盖国际课程的各个学科和知识点，注重学生的学习体验和效果，能够及时解决学生在学习过程中遇到的问题，能够为学生提供有效的学习指导和升学支持。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 奖项9 -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度留学服务影响力品牌</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0 hidden">
+                    <p class="text-white/80 mb-4">
+                        参选品牌需是致力于留学服务和在留学咨询服务方面具有深厚的专业底蕴，能够为学生提供全面、精准的留学规划和建议，在市场上享有较高的知名度和美誉度，赢得了学生和家长的广泛信赖。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 奖项10 -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度出国服务影响力品牌</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0 hidden">
+                    <p class="text-white/80 mb-4">
+                        参选品牌应能提供一站式的出国服务，涵盖签证办理、境外生活指导、学习辅助服务等。凭借专业的团队、丰富的经验和优质的服务，在行业内树立了良好口碑，助力众多学子顺利开启海外求学之旅。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 奖项11 -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度留学就业指导卓越品牌</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0 hidden">
+                    <p class="text-white/80 mb-4">
+                        参选机构须具备专业的留学就业指导团队，为学生提供从学历认证到就业规划的一站式服务，准确把握留学就业市场的趋势，提前布局，为学生提供持续的职业发展支持和前瞻性的指导。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 奖项12 -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度教育影响力品牌</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0 hidden">
+                    <p class="text-white/80 mb-4">
+                        参选品牌在教育创新方面表现突出；或是积极响应国家教育政策，致力于提升教育公平性和普及率；同时在教学质量、市场影响力等方面也表现突出，赢得了广泛的社会认可和赞誉。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 奖项13 -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度职业教育影响力品牌</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0 hidden">
+                    <p class="text-white/80 mb-4">
+                        参选品牌在职业教育领域具有深厚的专业底蕴和丰富的教学经验，能够为学生提供高质量的职业培训和教育服务；注重实践教学和技能培养，与企业和行业紧密合作，为学生提供实习和就业机会；同时，它们还积极推广职业教育的理念和价值，提升社会对职业教育的认知度和认可度。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 奖项14 -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md active" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度人工智能影响力教育品牌</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0">
+                    <p class="text-white/80 mb-4">
+                        参选品牌需在教育科技领域展现出强大的创新能力，将人工智能技术深度融入教学过程，实现个性化学习路径规划、智能辅导与评估等功能，为广大学子提供了更加智能化、高效化的学习体验。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 奖项15 -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度素质教育影响力品牌</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0 hidden">
+                    <p class="text-white/80 mb-4">
+                        参选品牌需在素质教育领域有着卓越的表现，注重培养学生的综合素养，涵盖艺术、体育、科技创新等多方面，激发学生潜能，促进全面发展，为孩子的未来奠定坚实基础，在行业内发挥着重要的引领作用。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 奖项16 -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度教育科技创新品牌</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0 hidden">
+                    <p class="text-white/80 mb-4">
+                        参选品牌应在教育科技领域表现卓越，并积极探索新技术在教育中的应用，如利用人工智能、大数据等技术打造个性化学习方案，创新教学模式，提升教学效果，为推动教育现代化发展注入强大动力。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 奖项17 -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度商科院校影响力品牌</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0 hidden">
+                    <p class="text-white/80 mb-4">
+                        参选院校应在商科教育领域成绩斐然，拥有优秀的师资队伍，完善的课程体系，注重实践与理论结合，培养出大量适应市场需求的高素质商科人才，在国内外商科教育界享有较高声誉，对推动商科教育发展有着重要影响力。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 奖项18 -->
+            <div class="honor-item rounded-xl border border-[rgb(125,94,213)] overflow-hidden transition-all duration-400 hover:shadow-md" style="background-color: #410a80;">
+                <div class="honor-title p-4 md:p-6 flex items-center cursor-pointer relative transition-all duration-400">
+                    <h3 class="font-semibold text-white text-lg transition-all duration-400">2025年度管理类专硕特色项目</h3>
+                    <i class="fa fa-chevron-down text-[rgb(125,94,213)] transition-transform duration-400 absolute right-4 md:right-6"></i>
+                </div>
+                <div class="honor-detail p-4 md:p-6 pt-0 hidden">
+                    <p class="text-white/80 mb-4">
+                        参选院校需在 MBA/EMBA/MEM/MPA/MTA/MPAcc 等专硕领域具有创新培养模式、高水平师资和产教融合课程体系，注重实践应用，培养符合行业需求的高层次人才。项目应具备专业特色鲜明、培养方案创新、校企合作深入、培养成果突出等特点，对行业发展具有示范引领作用。
+                    </p>
+                    <a href="https://qhzcad.com/expage/2025hurun#" class="text-[rgb(125,94,213)] hover:text-white flex items-center font-medium">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+
+
+<!-- 参选范围 -->
+<section id="tech3" class="py-16   bg-primary/5" style="background:radial-gradient(circle at center, #4a0087, #252b68 120%);">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16 reveal active">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4" style="color: white">参选范围 </h2>
+            <div class="w-16 h-1 bg-secondary1 mx-auto mb-6"></div>
+
+            <div class="space-y-6">
+                <div class="border2-gray-200 rounded-xl shadow-sm border ">
+                    <p class="text1-gray-600 leading-relaxed" style="line-height: 2.6rem;padding: 1%">
+                        教育人物:包括学校校长、教育机构负责人、教育专家学者等在教育领域有突出影响力的个人等。
+                    </p>
+                </div>
+                <div class="border2-gray-200 rounded-xl shadow-sm border  ">
+                    <p class="text1-gray-600 leading-relaxed" style="line-height: 2.6rem;padding: 1%">
+                        国际化学校:包括民办国际化学校、公立学校国际部(班)、外籍人员子女学校等。
+                    </p>
+                </div>
+                <div class="border2-gray-200 rounded-xl  shadow-sm border  ">
+                    <p class="text1-gray-600 leading-relaxed" style="line-height: 2.6rem;padding: 1%">
+                        教育培训:涵盖学科辅导、艺术培训、体育培训、职业培训、素质教育等各类教育培训机构。
+                    </p>
+                </div>
+                <div class="border2-gray-200 rounded-xl shadow-sm border  ">
+                    <p class="text1-gray-600 leading-relaxed" style="line-height: 2.6rem;padding: 1%">
+                        教育科技:涉及在线教育平台、教育软件、智能教育硬件、人工智能等教育科技企业。
+                    </p>
+                </div>
+                <div class="border2-gray-200 rounded-xl  shadow-sm border  ">
+                    <p class="text1-gray-600 leading-relaxed" style="line-height: 2.6rem;padding: 1%">
+                        人物类:侧重社会责任、理念创新、行业贡献等
+                    </p>
+                </div>
+                <div class="border2-gray-200 rounded-xl  shadow-sm border  ">
+                    <p class="text1-gray-600 leading-relaxed" style="line-height: 2.6rem;padding: 1%">
+                        品牌类:侧重品牌实力、产品与服务、持续发展、市场规模等
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 参选特点 -->
+<section id="process1" class="py-16    bg-white" style="background-color: #4a0087">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16 reveal active">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4" style="color: white">参选特点</h2>
+            <div class="w-16 h-1 bg-secondary1 mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto text-balance" style="color: white">
+                2025年1月 · 中国上海 · 聚焦教育创新与科技融合的全球盛会
+            </p>
+        </div>
+
+        <div class="px-4 md:px-8 max-w-7xl mx-auto">
+            <!-- 模块容器 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 卡片1：权威性与专业性兼具 -->
+                <div class="border1-gray-200 rounded-lg p-6 shadow-sm border   hover:shadow-md transition-all duration-300">
+                    <h3 class="text-base md:text-lg font-semibold text1-gray-800 mb-3">权威性与专业性兼具</h3>
+                    <p class="text1-gray-600 text-sm md:text-base">
+                        依托调研在行业多年积累的专业经验和广泛的影响力，为活动奠定了坚实的权威基础。
+                    </p>
+                </div>
+
+                <!-- 卡片2：覆盖范围广泛 -->
+                <div class="border1-gray-200 rounded-lg p-6 shadow-sm border  hover:shadow-md transition-all duration-300">
+                    <h3 class="text-base md:text-lg font-semibold text1-gray-800 mb-3">覆盖范围广泛</h3>
+                    <p class="text1-gray-600 text-sm md:text-base">
+                        涵盖国际化学校、教育培训、教育科技、教育人物等多个领域，几乎覆盖教育行业的主要板块。
+                    </p>
+                </div>
+
+                <!-- 卡片3：聚焦创新与发展 -->
+                <div class="border1-gray-200 rounded-lg p-6 shadow-sm border   hover:shadow-md transition-all duration-300">
+                    <h3 class="text-base md:text-lg font-semibold text1-gray-800 mb-3">聚焦创新与发展</h3>
+                    <p class="text1-gray-600 text-sm md:text-base">
+                        突出对创新精神和实践成果的关注，激励全球教育工作者不断探索和实践，推动全球教育事业的持续发展。
+                    </p>
+                </div>
+
+                <!-- 卡片4：多维度评估体系与良好的社会认可度 -->
+                <div class="border1-gray-200 rounded-lg p-6 shadow-sm border   hover:shadow-md transition-all duration-300">
+                    <h3 class="text-base md:text-lg font-semibold text1-gray-800 mb-3">多维度评估体系与良好的社会认可度</h3>
+                    <p class="text1-gray-600 text-sm md:text-base">
+                        有专业的调研评估团队，评估维度丰富且不断优化，得到了社会各界的广泛关注，在教育领域具有较高的影响力和公信力。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 参选目标 -->
+<section id="tech4" class="py-16   bg-primary/5" style="background:radial-gradient(circle at center, #4a0087, #252b68 120%);">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="py-12 px-4 md:px-8 mx-auto">
+            <div class="space-y-6">
+                <!-- 关于胡润百富集团 -->
+                <div class="border2-gray-200 rounded-xl p-6 md:p-8 shadow-sm border ">
+                    <h3 class="text-lg md:text-xl font-semibold text1-gray-800 mb-4">关于胡润百富集团 Hurun Group</h3>
+                    <p class="text1-gray-600 leading-relaxed" style="line-height: 2.6rem">
+                        胡润百富致力于通过有质量的榜单和调研，发现企业价值，弘扬企业家精神。胡润百富以富豪系列而闻名，讲述中国和全球成功企业家的故事，其他主要系列专注于年轻企业和企业家，包括胡润独角兽榜、两个胡润未来独角兽榜、胡润U30和胡润新势力系列。为中国和全球最成功的企业家排名，通过这一系列，让世界更了解中国经济，迄今已成为全球最大的财富榜；500强企业系列，为中国和全球最具价值的企业排名；创业系列，为中国和全球最具成长性的创业企业排名。
+                    </p>
+                </div>
+
+                <!-- 关于胡润百学 -->
+                <div class="border2-gray-200 rounded-xl p-6 md:p-8 shadow-sm border  ">
+                    <h3 class="text-lg md:text-xl font-semibold text1-gray-800 mb-4">关于胡润百学</h3>
+                    <p class="text1-gray-600 leading-relaxed" style="line-height: 2.6rem">
+                         “打开名校大门的金钥匙”胡润百学作为胡润百富集团旗下的国际教育平台，为中国家长提供子女出国留学、夏令营和成功求学课程。旗下《胡润国际名校》系列创刊于2008年，成为第一用中文出版的权威及综合性海外留学书，内容覆盖英国、美国、加拿大、澳大利亚、瑞士、新西兰、新加坡和中国香港8个国家和地区，另外有《艺术、设计、表演》和《金融、政治、军事》2个专业，总发行量达到71万，达到710万传阅量。胡润百学每年在全球举办近百场国际教育峰会，连接学生、家长与国际名校。
+                    </p>
+                </div>
+
+                <!-- 关于“耀眼未来” -->
+                <div class="border2-gray-200 rounded-xl p-6 md:p-8 shadow-sm border  ">
+                    <h3 class="text-lg md:text-xl font-semibold text1-gray-800 mb-4">关于“耀眼未来”</h3>
+                    <p class="text1-gray-600 leading-relaxed" style="line-height: 2.6rem">
+                        在当今这个瞬息万变的时代，教育作为社会进步的基石，正经历着前所未有的变革与发展。在这一浪潮中，“耀眼未来”品牌应运而生，以其前瞻性的视野、创新的理念和卓越的执行力，成为推动教育领域进步的重要力量。<br>
+                        “耀眼未来”品牌诞生于全球教育生态深刻变革的大背景下。随着科技的飞速发展和全球化的深入推进，教育不再局限于传统的时空限制，而是呈现出多元化、智能化、个性化的新趋势。面对这一变革，“耀眼未来”敏锐地捕捉到教育发展的核心需求，致力于搭建连接全球教育资源的桥梁，为教育从业者、学习者和决策者提供洞察未来的视角与解决方案。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+
+<!-- 合作伙伴 -->
+<section id="partners" class="py-16   bg-gradient-to-b   to-white" style="background-color: #4a0087">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16 reveal active">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4" style="color: white">合作伙伴</h2>
+            <div class="w-16 h-1 bg-secondary1 mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto text-balance" style="color: white">
+                感谢各领域合作伙伴对本次盛典的大力支持，共同推动教育创新发展
+            </p>
+        </div>
+
+        <!-- 钻石合作伙伴 -->
+        
+            <div class="mb-12 reveal active">
+                <h3 class="text-lg font-semibold text-dark mb-6 flex items-center" style="color: white">
+                    <span class="inline-block w-3 h-3 rounded-full bg-yellow-500 mr-2"></span>
+                        合作伙伴
+                </h3>
+                <div class="p-6 rounded-xl card-border shadow-sm" style="background-color: #410a80;">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251210104601894.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/25120909223914.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251209092222356.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251209093937652.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/25120409474051.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251204094758349.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208145832205.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251204094734114.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208145836726.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/25120816081890.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251210143756792.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208145932590.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251209100731503.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251204094821722.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208150015232.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208150020738.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208150032300.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208154359116.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251204094831485.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251209162943878.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208145915390.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251204094846166.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/260107143955949.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251204094907242.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251209102500410.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251204094746303.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251204094753594.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/25120409480423.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251204094814459.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251204094836494.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251204094841750.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251204094855961.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251203180009275.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251204094911583.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208145804408.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208160822968.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251204094809160.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208145809699.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208175426354.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208145821178.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/25120814582682.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208145854265.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/25120814590053.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208145904899.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208145922310.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208145927215.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/25120814593865.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208145942472.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/25120814594792.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208145951601.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208145956309.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208150004507.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208150027327.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208160752265.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208160757330.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208160801782.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208160813422.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208160828438.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251208175648123.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251212174954384.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251212175429211.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/260109151155869.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="mb-12 reveal active">
+                <h3 class="text-lg font-semibold text-dark mb-6 flex items-center" style="color: white">
+                    <span class="inline-block w-3 h-3 rounded-full bg-yellow-500 mr-2"></span>
+                        媒体联盟
+                </h3>
+                <div class="p-6 rounded-xl card-border shadow-sm" style="background-color: #410a80;">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251205092146860.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251205092201835.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251205092216907.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251205092228273.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251205092239287.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251121095028602.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251121094651406.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251121094706133.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251205092542705.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251121094711653.jpg" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251121094717884.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251121094722421.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251121094728600.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/25112109473527.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251121094740785.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/25112109475265.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251121094804276.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251121094809487.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251121094814476.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251121094819863.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+                            <!-- 每个合作伙伴 Logo 容器 -->
+                            <div class="partner-logo flex items-center justify-center  bg-gray-50 rounded-lg mb-4">
+                                <img src="./2025胡润·耀眼未来教育盛典_files/251121095023586.png" alt="" class="max-h-full max-w-full object-contain">
+                            </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+
+        
+    </div>
+</section>
+
+<script>
+    // 移动端菜单切换
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        if (mobileMenu.classList.contains('hidden')) {
+            mobileMenuBtn.innerHTML = '<i class="fa fa-bars text-xl"></i>';
+        } else {
+            mobileMenuBtn.innerHTML = '<i class="fa fa-times text-xl"></i>';
+        }
+    });
+
+    // 滚动显示动画
+    function handleReveal() {
+        const reveals = document.querySelectorAll('.reveal');
+        const windowHeight = window.innerHeight;
+
+        reveals.forEach(el => {
+            const elementTop = el.getBoundingClientRect().top;
+            const elementVisible = 100;
+
+            if (elementTop < windowHeight - elementVisible) {
+                el.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', handleReveal);
+    window.addEventListener('load', handleReveal);
+
+    // 数字计数动画
+    function animateCounters() {
+        const counters = document.querySelectorAll('.stat-counter');
+        const speed = 200;
+
+        counters.forEach(counter => {
+            const target = parseFloat(counter.getAttribute('data-target'));
+            const count = parseFloat(counter.innerText);
+            const increment = target / speed;
+
+            if (count < target) {
+                counter.innerText = (count + increment).toFixed(count % 1 === 0 ? 0 : 1);
+                setTimeout(animateCounters, 1);
+            } else {
+                counter.innerText = target.toFixed(target % 1 === 0 ? 0 : 1);
+            }
+        });
+    }
+
+    // 图表初始化
+    window.addEventListener('load', () => {
+        // 市场增长图表
+        const growthCtx = document.getElementById('growthChart').getContext('2d');
+        const growthChart = new Chart(growthCtx, {
+            type: 'line',
+            data: {
+                labels: ['2020', '2021', '2022', '2023', '2024', '2025(预测)'],
+                datasets: [{
+                    label: '全球教育科技市场规模（十亿美元）',
+                    data: [45, 58, 69, 78, 85, 92],
+                    borderColor: '#1677FF',
+                    backgroundColor: 'rgba(22, 119, 255, 0.1)',
+                    tension: 0.4,
+                    fill: true,
+                    pointBackgroundColor: '#FFFFFF',
+                    pointBorderColor: '#1677FF',
+                    pointBorderWidth: 2,
+                    pointRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        labels: {
+                            boxWidth: 12,
+                            usePointStyle: true,
+                            pointStyle: 'circle'
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                animation: {
+                    duration: 2000,
+                    delay: 500
+                }
+            }
+        });
+
+        // 监听计数器元素可见性
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-counter').forEach(counter => {
+            counterObserver.observe(counter);
+        });
+    });
+    <!-- 配套 JavaScript 逻辑（需添加到页面脚本区域） -->
+    document.addEventListener('DOMContentLoaded', function() {
+        const honorItems = document.querySelectorAll('.honor-item');
+        // 初始化：将第一个奖项设为默认激活项
+        let activeItem = document.querySelector('.honor-item.active');
+
+        honorItems.forEach(item => {
+            const title = item.querySelector('.honor-title');
+            const detail = item.querySelector('.honor-detail');
+
+            // 桌面端：hover展开，移开收起（保持单个激活）
+            item.addEventListener('mouseenter', function() {
+                if (activeItem && activeItem !== item) {
+                    activeItem.classList.remove('active');
+                    activeItem.querySelector('.honor-detail').classList.add('hidden');
+                }
+                item.classList.add('active');
+                detail.classList.remove('hidden');
+                activeItem = item;
+            });
+
+            // 移动端：点击展开/收起
+            title.addEventListener('click', function(e) {
+                e.stopPropagation();
+                if (item.classList.contains('active')) {
+                    item.classList.remove('active');
+                    detail.classList.add('hidden');
+                    activeItem = null;
+                } else {
+                    if (activeItem) {
+                        activeItem.classList.remove('active');
+                        activeItem.querySelector('.honor-detail').classList.add('hidden');
+                    }
+                    item.classList.add('active');
+                    detail.classList.remove('hidden');
+                    activeItem = item;
+                }
+            });
+
+            // 页面点击其他区域，收起所有
+            document.addEventListener('click', function(e) {
+                if (!item.contains(e.target)) {
+                    item.classList.remove('active');
+                    detail.classList.add('hidden');
+                    activeItem = null;
+                }
+            });
+        });
+    });
+</script>
+
+</body></html>
